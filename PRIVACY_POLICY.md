@@ -3,7 +3,7 @@
 **Effective Date:** September 27, 2026  
 **Last Updated:** September 27, 2026  
 **Application Name:** DIAGNO (com.diagno.health / Diagno Medical Learning App)  
-**Developer Contact:** support@diagno.health / dev@diagno.health  
+**Developer Contact:** diagnoedugame25@gmail.com
 
 ---
 
@@ -110,8 +110,8 @@ We may update this policy periodically to reflect new educational features or re
 
 ## 9. Contact Us
 
-If you have any questions, concerns, or requests regarding this Privacy Policy or our data handling practices, please contact our Data Protection Officer:
+If you have any questions, concerns, or requests regarding this Privacy Policy or our data handling practices, please contact our team:
 
-* **Email**: `privacy@diagno.health`
-* **Developer**: DIAGNO Medical Systems
-* **Support Portal**: In-app `Profile > Help & Support`
+* **Email**: `diagnoedugame25@gmail.com`
+* **Developer**: Team DIAGNO
+* **Support Portal**: In-app `Profile > Contact & Support`
