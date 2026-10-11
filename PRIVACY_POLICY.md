@@ -14,7 +14,7 @@ DIAGNO ("we," "our," or "us") provides a gamified, peer-reviewed clinical educat
 We take your digital privacy seriously. This Privacy Policy informs you about how we collect, process, store, and protect your information when you use our mobile application and web services.
 
 > **CRITICAL MEDICAL DISCLAIMER & SYNTHETIC DATA STATEMENT**:  
-> **DIAGNO contains strictly simulated, synthetic, or de-identified educational clinical vignettes.** No Protected Health Information (PHI) under the Health Insurance Portability and Accountability Act (HIPAA) or General Data Protection Regulation (GDPR) is hosted, processed, or permitted on this platform. Users must **never** input real patient identifiable information into any field in DIAGNO.
+> **Diagno is an educational simulator using synthetic data. It is not a medical device, gives no medical advice, and must not be used for real clinical decisions.** No Protected Health Information (PHI) under the Health Insurance Portability and Accountability Act (HIPAA) or General Data Protection Regulation (GDPR) is hosted, processed, or permitted on this platform. Users must **never** input real patient identifiable information into any field in Diagno.
 
 ---
 
@@ -72,24 +72,28 @@ We process collected data exclusively for the following purposes:
 
 ## 4. Third-Party Infrastructure & Data Processors
 
-DIAGNO relies on enterprise-grade cloud providers that adhere to rigorous security standards:
-* **Google Firebase (Cloud Firestore & Firebase Authentication)**: Cloud database and authentication services provided by Google LLC. Data is encrypted at rest using AES-256 and in transit using TLS 1.3.
+Diagno relies on enterprise-grade cloud providers that adhere to rigorous security standards:
+* **Google Firebase (Cloud Firestore & Firebase Authentication)**: Cloud database and authentication services provided by Google LLC (Project: `diagno-learn`). Data is encrypted at rest using AES-256 and in transit using TLS 1.3.
 * **Google Cloud Platform**: Server hosting and API proxy infrastructure.
 
-We **never** sell, rent, or trade your personal data to third parties, data brokers, advertising networks, or pharmaceutical sponsors.
+**Data is NOT sold.** Personal information is never sold, rented, or traded to third parties, data brokers, or advertisers, and is shared only with Firebase/Google acting as service providers.
 
 ---
 
-## 5. Data Retention & Account Deletion
+## 5. Delete Your Account and Data
 
-* **Retention Period**: Your profile, game state, and diagnostic records are retained as long as your account remains active. Aggregated telemetry summaries are archived for longitudinal difficulty modeling.
-* **User Rights & Account Deletion**: Under GDPR, CCPA, and Google Play Data Safety policies, you have the right to inspect, export, or permanently delete your data. To request complete account deletion, email `diagnoedugame25@gmail.com` or use the in-app Account Settings deletion request. Upon verification, all documents under `/users/{uid}` and corresponding authentication profiles will be deleted within 30 days.
+For detailed, step-by-step instructions and full deletion options (both in-app and via email), please visit our dedicated [Account Deletion Page (delete-account.html)](delete-account.html).
+
+* **In-App Deletion (Immediate)**: Open Diagno &rarr; Profile &rarr; Delete account &rarr; confirm. All documents under `/users/{uid}` and corresponding authentication profiles are immediately purged.
+* **No-App Email Request (Within 30 Days)**: If you do not have the app installed, email `diagnoedugame25@gmail.com` <!-- TODO: Confirm [EMAIL] --> from your registered email address with the subject line `Delete my Diagno account`. Requests are verified and completed within 30 days.
+* **Data That Is Deleted**: Profile name, email address, user ID (Firebase UID), progress, quiz and game activity, streaks, and bookmarks.
+* **Data That Is Kept**: Nothing. Routine encrypted database backups are purged within 30 days.
 
 ---
 
-## 6. Protection of Minors (COPPA)
+## 6. Target Audience & Protection of Minors
 
-DIAGNO is an academic tool intended for adult medical students and healthcare professionals aged 17 and older. We do not knowingly collect personal information from children under the age of 13.
+Diagno is an academic educational simulator intended for adult medical students and healthcare professionals aged **18 and over**. We do not knowingly collect personal information from individuals under the age of 18.
 
 ---
 
@@ -113,5 +117,6 @@ We may update this policy periodically to reflect new educational features or re
 If you have any questions, concerns, or requests regarding this Privacy Policy or our data handling practices, please contact our team:
 
 * **Email**: `diagnoedugame25@gmail.com`
-* **Developer**: Team DIAGNO
-* **Support Portal**: In-app `Profile > Contact & Support`
+* **Developer**: Diagno-Learn
+* **Account Deletion Page**: [delete-account.html](delete-account.html)
+* **Support Portal**: In-app `Profile > Help & Support`

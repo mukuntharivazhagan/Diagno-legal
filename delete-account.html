@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete your Diagno account</title>
+    <style>
+        :root {
+            --primary: #0b69ff;
+            --primary-dark: #0052cc;
+            --danger: #dc2626;
+            --danger-bg: #fef2f2;
+            --text-main: #0f172a;
+            --text-muted: #475569;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --border: #e2e8f0;
+            --radius: 12px;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 24px 16px;
+        }
+        .container {
+            max-width: 760px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            padding: 32px;
+        }
+        header {
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 20px;
+            margin-bottom: 28px;
+        }
+        .app-badge {
+            display: inline-block;
+            background: #eff6ff;
+            color: var(--primary);
+            font-size: 13px;
+            font-weight: 600;
+            padding: 4px 10px;
+            border-radius: 999px;
+            margin-bottom: 12px;
+        }
+        h1 {
+            font-size: 26px;
+            font-weight: 800;
+            color: var(--text-main);
+            margin-bottom: 8px;
+        }
+        .meta-info {
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+        .meta-info strong {
+            color: var(--text-main);
+        }
+        section {
+            margin-bottom: 28px;
+        }
+        h2 {
+            font-size: 19px;
+            font-weight: 700;
+            color: var(--text-main);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        p, li {
+            font-size: 15px;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
+        ul, ol {
+            padding-left: 22px;
+            margin-bottom: 14px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .step-box {
+            background: #f0fdf4;
+            border: 1px solid #bbf7d0;
+            border-radius: var(--radius);
+            padding: 20px;
+            margin-bottom: 24px;
+        }
+        .step-box h3 {
+            font-size: 16px;
+            font-weight: 700;
+            color: #166534;
+            margin-bottom: 12px;
+        }
+        .step-flow {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 8px;
+            margin: 14px 0;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        .step-pill {
+            background: #ffffff;
+            border: 1px solid #86efac;
+            color: #15803d;
+            padding: 6px 12px;
+            border-radius: 8px;
+        }
+        .step-arrow {
+            color: #15803d;
+        }
+        .email-box {
+            background: #eff6ff;
+            border: 1px solid #bfdbfe;
+            border-radius: var(--radius);
+            padding: 20px;
+            margin-bottom: 24px;
+        }
+        .email-box h3 {
+            font-size: 16px;
+            font-weight: 700;
+            color: #1e40af;
+            margin-bottom: 8px;
+        }
+        .danger-box {
+            background: var(--danger-bg);
+            border: 1px solid #fecaca;
+            border-radius: var(--radius);
+            padding: 16px;
+            margin-bottom: 24px;
+        }
+        .danger-box p {
+            color: #991b1b;
+            font-size: 14px;
+            margin: 0;
+        }
+        .data-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+        @media (max-width: 640px) {
+            .data-grid {
+                grid-template-columns: 1fr;
+            }
+            .container {
+                padding: 20px 16px;
+            }
+            h1 {
+                font-size: 22px;
+            }
+        }
+        .data-card {
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 16px;
+            background: #ffffff;
+        }
+        .data-card.deleted {
+            border-top: 4px solid var(--danger);
+        }
+        .data-card.kept {
+            border-top: 4px solid #10b981;
+        }
+        .data-card h3 {
+            font-size: 16px;
+            margin-bottom: 12px;
+        }
+        .data-card.deleted h3 {
+            color: var(--danger);
+        }
+        .data-card.kept h3 {
+            color: #047857;
+        }
+        code {
+            background: #f1f5f9;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 14px;
+            color: #0f172a;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, monospace;
+        }
+        footer {
+            border-top: 1px solid var(--border);
+            padding-top: 20px;
+            margin-top: 32px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="app-badge">Account &amp; Data Deletion</div>
+            <h1>Delete your Diagno account</h1>
+            <p class="meta-info">
+                App: <strong>Diagno</strong> (Package ID: <code>com.diagno.app</code>)<br>
+                Developer: <strong>Diagno-Learn</strong><br>
+                Backend Services: <strong>Firebase Authentication &amp; Cloud Firestore</strong> (Project: <code>diagno-learn</code>)
+            </p>
+        </header>
+
+        <!-- Method 1: In-App (Prominent) -->
+        <section>
+            <div class="step-box">
+                <h3>Option 1: In-App Deletion (Fastest &amp; Immediate)</h3>
+                <p>You can permanently delete your Diagno account and all associated data directly inside the application at any time. In-app deletion takes effect <strong>immediately</strong>.</p>
+                <div class="step-flow">
+                    <span class="step-pill">1. Open Diagno</span>
+                    <span class="step-arrow">&rarr;</span>
+                    <span class="step-pill">2. Profile</span>
+                    <span class="step-arrow">&rarr;</span>
+                    <span class="step-pill">3. Delete account</span>
+                    <span class="step-arrow">&rarr;</span>
+                    <span class="step-pill">4. Confirm</span>
+                </div>
+                <ol>
+                    <li>Launch the <strong>Diagno</strong> app on your Android device.</li>
+                    <li>Tap your profile avatar or the <strong>Profile</strong> tab in the navigation bar.</li>
+                    <li>Scroll down to the <strong>Account Actions</strong> section and tap <strong>Delete Account</strong>.</li>
+                    <li>Confirm the permanent deletion prompt. Your account and cloud records are immediately deleted.</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Method 2: No-App Email Request -->
+        <section>
+            <div class="email-box">
+                <h3>Option 2: Without the App (Email Request)</h3>
+                <p>If you uninstalled the application or cannot access your device, you can request full account deletion via email:</p>
+                <ul>
+                    <li><strong>Send an email to:</strong> <a href="mailto:diagnoedugame25@gmail.com">diagnoedugame25@gmail.com</a></li>
+                    <li><strong>Sender:</strong> Must be sent from the registered email address associated with your Diagno account.</li>
+                    <li><strong>Subject line:</strong> <code>Delete my Diagno account</code></li>
+                    <li><strong>Timeframe:</strong> Email deletion requests are verified and completed within <strong>30 days</strong>.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Data Breakdown -->
+        <section>
+            <h2>Data Handling Upon Deletion</h2>
+            <div class="data-grid">
+                <!-- Data Deleted -->
+                <div class="data-card deleted">
+                    <h3>Data that is deleted</h3>
+                    <p>When your deletion request is processed, the following information is permanently erased:</p>
+                    <ul>
+                        <li><strong>Profile Information:</strong> Display name, registered email address, and avatar URL.</li>
+                        <li><strong>Identity Credentials:</strong> User ID (Firebase Authentication UID).</li>
+                        <li><strong>Progress &amp; Learning History:</strong> Academic level, experience points (XP), clinical rating (CR / ELO), and grand rounds records.</li>
+                        <li><strong>Quiz &amp; Game Activity:</strong> Daily puzzles completed, accuracy logs, duel match outcomes, streaks, and bookmarks.</li>
+                        <li><strong>In-Game Virtual Assets:</strong> Unlocked companions/pets, virtual stones, rubies, and gems.</li>
+                        <li><strong>Saved Settings:</strong> Audio preferences, notification toggles, and user preferences.</li>
+                    </ul>
+                </div>
+
+                <!-- Data Kept -->
+                <div class="data-card kept">
+                    <h3>Data that is kept</h3>
+                    <!-- TODO: Confirm whether ANY aggregated non-identifiable telemetry is retained. As per app facts: no personal data kept. -->
+                    <p><strong>Nothing is kept.</strong></p>
+                    <p>No personal data, user documents (<code>/users/{uid}</code>), or authentication profiles are retained after account deletion.</p>
+                    <p style="margin-top: 12px;"><strong>Backup Retention Period:</strong></p>
+                    <p>Routine encrypted database snapshots and system backups are automatically overwritten and purged within <strong>30 days</strong>. After this retention window, no traces of your data remain in backups.</p>
+                </div>
+            </div>
+
+            <div class="danger-box">
+                <p><strong>Warning:</strong> Account deletion is permanent and cannot be undone. Once deleted, your game progress, clinical duel rating, companion pets, and educational statistics cannot be recovered.</p>
+            </div>
+        </section>
+
+        <!-- Medical Disclaimer -->
+        <section>
+            <p style="font-size: 13px; color: #64748b; font-style: italic; border-left: 3px solid #cbd5e1; padding-left: 12px;">
+                <strong>Medical Simulator Disclaimer:</strong> Diagno is an educational simulator using synthetic data. It is not a medical device, gives no medical advice, and must not be used for real clinical decisions.
+            </p>
+        </section>
+
+        <footer>
+            <span>&larr; Return to <a href="index.html">Privacy Policy</a></span>
+            <span>&copy; 2026 Diagno</span>
+        </footer>
+    </div>
+</body>
+</html>
