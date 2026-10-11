@@ -1,8 +1,8 @@
 # Privacy Policy for DIAGNO: Clinical Diagnostic Mastery
 
 **Effective Date:** September 27, 2026  
-**Last Updated:** September 27, 2026  
-**Application Name:** DIAGNO (com.diagno.health / Diagno Medical Learning App)  
+**Last Updated:** October 11, 2026  
+**Application Name:** DIAGNO (com.diagno.app / Diagno Medical Learning App)  
 **Developer Contact:** diagnoedugame25@gmail.com
 
 ---
@@ -83,7 +83,7 @@ We **never** sell, rent, or trade your personal data to third parties, data brok
 ## 5. Data Retention & Account Deletion
 
 * **Retention Period**: Your profile, game state, and diagnostic records are retained as long as your account remains active. Aggregated telemetry summaries are archived for longitudinal difficulty modeling.
-* **User Rights & Account Deletion**: Under GDPR, CCPA, and Google Play Data Safety policies, you have the right to inspect, export, or permanently delete your data. To request complete account deletion, email `privacy@diagno.health` or use the in-app Account Settings deletion request. Upon verification, all documents under `/users/{uid}` and corresponding authentication profiles will be deleted within 30 days.
+* **User Rights & Account Deletion**: Under GDPR, CCPA, and Google Play Data Safety policies, you have the right to inspect, export, or permanently delete your data. To request complete account deletion, email `diagnoedugame25@gmail.com` or use the in-app Account Settings deletion request. Upon verification, all documents under `/users/{uid}` and corresponding authentication profiles will be deleted within 30 days.
 
 ---
 
